@@ -8,8 +8,9 @@ loadSprite("bean", "sprites/bean.png");
 //setGravity(1600);
 
 const player = add([pos(120, 500), sprite("bean"), area(), body()]);
+const player2 = add([pos(220, 500), sprite("bean"), area(), body()]);
 onKeyPress("space", () => {
     //player.jump(1000);
     shake();
+    player.move(90);
 });
-player.move(100);
